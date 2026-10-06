@@ -1,15 +1,11 @@
-/* Основні стилі для сторінки */
-
-/* Стилізація всього тіла сторінки */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #241E1E;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
-/* Стилізація заголовка */
 header {
     background-color: #FF7F50;
     color: #fff;
@@ -17,7 +13,6 @@ header {
     padding: 20px;
 }
 
-/* Стилізація заголовків */
 h1 {
     font-size: 2.5em;
 }
@@ -25,16 +20,26 @@ h1 {
 h2 {
     color: #FF7F50;
     margin-top: 20px;
+	padding-left: 3px;
 }
 
-/* Стилізація абзаців */
 p {
     line-height: 1.6;
-    margin: 15px 0;
+    margin: 10px;
+	color: white;
 }
 
-/* Стилізація списків */
 ul {
+	color: white; 
     list-style-type: disc;
     padding-left: 20px;
+	margin: 10px;
+}
+
+#red1 {
+	color: red;
+}
+
+div {
+	display: inline;
 }
