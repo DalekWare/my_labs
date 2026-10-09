@@ -43,3 +43,12 @@ ul {
 div {
 	display: inline;
 }
+
+.quote {
+	color: #333
+}
+
+#made {
+	padding: 3px;
+	margin: 33px;
+}
