@@ -3,7 +3,11 @@
 <html>
  <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="STYLES.css">
+  <style>
+    button {
+     background-color: orange;
+    }
+  </style>
  </head>
  
  <body>
