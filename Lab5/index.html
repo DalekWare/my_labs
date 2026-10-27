@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Вступ до JavaScript</title>
+	</head>
+	
+	<body>
+		<h1>Лабораторна робота 4: Вступ до JavaScript</h1>
+  
+		<script>
+			let userName = prompt("Введіть своє ім'я:");
+			alert('Вітаю, ' + userName + '!');
+
+			let a = prompt("Введіть перше число:");
+			let b = prompt("Введіть друге число:");
+			let c = a * b;
+			let d = a / b;
+			alert('Добуток: ' + c + '\nЧастка: ' + d);
+
+			const myAge = 18;
+			let year = prompt("Введіть свій рік народження:");
+			let userAge = 2026 - year;
+			let difAge = Math.abs(myAge - userAge);
+			let difference;
+			
+			let lastDigit = difAge % 10;
+			let lastTwoDigits = difAge % 100;
+
+			let word;
+
+			if (lastTwoDigits >= 11 && lastTwoDigits <= 19) {
+				// Для чисел від 11 до 19 завжди "років" (11 років, 12 років, 112 років тощо)
+				word = 'років';
+			} else if (lastDigit === 1) {
+				// Для чисел, що закінчуються на 1 (окрім 11): 1, 21, 31... 91
+				word = 'рік';
+			} else if (lastDigit >= 2 && lastDigit <= 4) {
+				// Для чисел, що закінчуються на 2, 3, 4 (окрім 12-14): 2, 23, 44...
+				word = 'роки';
+			} else {
+				// Для всіх інших випадків (0, 5-9, 10, 20 тощо)
+				word = 'років';
+			}
+
+			if (userAge >= myAge) {
+				difference = 'старший';
+			} 
+			else {
+				difference = 'молодший';
+			}
+			alert('Ваш вік: ' + userAge + '\n' + userName + ' ' + difference + ' на ' + difAge + ' ' + word + '.');
+		</script>
+		
+	</body>
+	
+</html>
